@@ -1,0 +1,21 @@
+{
+    "manifest_version":3,
+
+    "name":"YT Adblocker",
+    "description":"Made by Pushker Naresh",
+    "version":"2.0",
+    "icons": {
+        "128"   : "logo.png"
+    },
+    "content_scripts":[{
+        "js":["script.js"],
+        "run_at":"document_idle",
+        "matches":["<all_urls>"]
+    }],
+
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ]
+
+}
